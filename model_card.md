@@ -10,6 +10,8 @@
 
 VibeFinder 1.0 suggests songs from a small catalog based on a user's preferred genre, mood, and energy level. It assumes the user has a single dominant taste profile — one favorite genre, one preferred mood, and a target energy level. This system is built for classroom exploration only and is not designed for real production use.
 
+**Non-intended use:** This system should NOT be used as a real music recommendation product. It should not be used to make decisions about what content to show real users, to profile users based on their taste, or in any commercial product. The catalog is too small, the weights are not learned from real data, and the system has no safeguards against bias or unfairness.
+
 ---
 
 ## 3. How the Model Works

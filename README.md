@@ -118,7 +118,13 @@ pytest
 
 ## Reflection
 
-*(To be filled in after completing the model card)*
+Building VibeFinder taught me that recommendation systems are fundamentally just scoring rules — there is no magic, just weighted math. My biggest learning moment was the conflicting profile test, where a user asking for high-energy jazz got a very calm song recommended because genre and mood weights dominated over energy closeness. That showed me how fixed weights can override what the user actually cares about most.
+
+AI tools helped me move fast — generating the CSV data, scaffolding the scoring function, and writing tests in minutes. But I needed to double-check the import paths (the `from recommender import` vs `from src.recommender import` bug), verify that the scoring logic actually matched my algorithm recipe, and make sure the TODO comments were preserved in the right places.
+
+What surprised me most was how "smart" simple algorithms can feel. When Sunrise City scored 7.92 for a pop/happy/high-energy user, it felt like the system genuinely understood that user — but it was just three weighted additions. That gap between "feels intelligent" and "is actually just math" is exactly what makes AI systems both powerful and risky to deploy without careful evaluation.
+
+If I extended this project, I would add user feedback (likes/skips) to learn weights over time, and add diversity logic so the top 5 results always span at least 3 different genres.
 
 ---
 
