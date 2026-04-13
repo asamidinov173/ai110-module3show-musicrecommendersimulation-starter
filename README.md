@@ -60,7 +60,13 @@ flowchart TD
 ## Expected Biases
 
 - **Genre dominance** — genre is worth 3 points vs mood's 2, so a genre match will always outweigh a perfect mood match
-- **Filter bubble risk** — if a user's favorite genre dominates the catalog, they will rarely see other 
+- **Filter bubble risk** — if a user's favorite genre dominates the catalog, they will rarely see other genres even if the mood and energy match well
+- **Fixed weights** — all users are scored with the same weights regardless of their actual listening behavior
+- **Missing features** — tempo and danceability are in the dataset but not used in scoring
+
+---
+
+## Getting Started
 
 ### Setup
 
@@ -90,6 +96,10 @@ pytest
 ```
 
 ---
+
+## 📸 Demo
+
+![Recommendations Output](recommend-output-module3.png)
 
 ## Experiments You Tried
 
